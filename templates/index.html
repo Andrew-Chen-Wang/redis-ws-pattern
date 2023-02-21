@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat {{ id }}</title>
+    </head>
+    <body>
+        <h1>WebSocket Chat</h1>
+        <form id="form" action="" data-room="{{ id }}">
+            <label for="messageText"></label>
+            <input type="text" id="messageText" autocomplete="off"/>
+            <button>Send</button>
+        </form>
+        <ul id="messages">
+        </ul>
+        <script src="{{ url_for('static', path='/script.js') }}"></script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+fastapi
+redis
+hiredis
+websockets
+jinja2
+orjson
